@@ -1,0 +1,30 @@
+# Upload only the files needed to build this static website.
+/*
+!src
+!src/**
+!public
+!public/**
+!/index.html
+!/package.json
+!/package-lock.json
+!/tsconfig.json
+!/tsconfig.app.json
+!/tsconfig.node.json
+!/vite.config.ts
+!/vercel.json
+
+# Never upload environment files, credentials, or applicant datasets,
+# even if one is later placed inside src/ or public/.
+**/.env
+**/.env.*
+**/*.local
+**/*.pem
+**/*.key
+**/*credentials*
+**/*.csv
+**/*.xlsx
+**/*.sqlite
+**/*.sqlite3
+**/*.db
+**/uploads/
+**/applicants/
